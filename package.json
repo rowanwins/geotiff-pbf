@@ -1,0 +1,31 @@
+{
+  "name": "raster-geobuf",
+  "version": "0.0.1",
+  "description": "Store geotiffs in a protocol buffer format",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "raster",
+    "geotiff",
+    "protocol",
+    "buffers"
+  ],
+  "author": "Rowan Winsemius",
+  "license": "MIT",
+  "ava": {
+    "files": [
+      "./test/**/*.spec.js",
+      "!./test/harness/**"
+    ],
+    "require": "babel-core/register"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "georaster": "^0.1.0",
+    "geotiff": "^0.4.1",
+    "pbf": "^3.1.0",
+    "rollup": "^0.53.4"
+  }
+}
